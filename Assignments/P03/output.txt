@@ -1,0 +1,53 @@
+Daniel Hernandez
+3/8/2023
+Spring 2143
+
+digraph LL {
+rankdir="LR"
+0 [color="black", shape="record"]
+1 [color="red", label="4", shape="circle"]
+2 [color="purple", shape="diamond", style="filled"]
+3 [color="green", shape="octagon", style="filled"]
+4 [color="black", label="{ <data> 56 | <next> }", shape="record"]
+5 [color="white", label="{ <data> null }", shape="record"]
+0 -> 1 [arrowhead="crow", arrowtail="dot", color="red", dir="both"]
+1 -> 2 [arrowhead="curve", color="green"]
+2 -> 3 [arrowhead="dot", arrowtail="box", color="pink", dir="both"]
+3 -> 4 [arrowhead="vee", color="brown", dir="none"]
+4 -> 5 [arrowhead="vee", color="brown", dir="one"]
+}
+
+digraph DLL {
+rankdir="LR"
+0 [color="gray", label="{ <data> 5 | <next> }", shape="record"]
+1 [color="yellow", shape="star", style="filled"]
+2 [color="blue", shape="triangle"]
+3 [color="deepskyblue", label="14", shape="egg", style="filled"]
+4 [color="purple", shape="house"]
+0 -> 1 [arrowhead="icurve", color="blue"]
+1 -> 0 [arrowhead="tee", color="blue", dir="one"]
+1 -> 2 [arrowhead="none", color="pink"]
+2 -> 1 [arrowhead="inv", arrowtail="icurve", color="red", dir="both"]
+2 -> 3 [arrowhead="vee", color="purple"]
+3 -> 2 [arrowhead="vee", color="gray", dir="none"]
+3 -> 4 [arrowhead="icurve", color="black"]
+4 -> 3 [arrowhead="vee", color="yellow"]
+}
+
+digraph BST {
+rankdir="TD"
+0 [color="purple", shape="record"]
+1 [color="aquamarine", label="5", shape="egg", style="filled"]
+2 [color="black", shape="folder"]
+3 [color="darkseagreen", shape="invtriangle", style="filled"]
+4 [color="black", label="37", shape="star"]
+5 [color="cyan", shape="octagon", style="filled"]
+6 [color="forestgreen", label="93", shape="hexagon"]
+0 -> 1 [arrowhead="tee", color="pink"]
+0 -> 2 [arrowhead="inv", color="green", dir="none"]
+1 -> 3 [arrowhead="icurve", color="red"]
+1 -> 4 [arrowhead="normal", color="crimson"]
+2 -> 5 [arrowhead="diamond", color="chocolate", dir="one"]
+2 -> 6 [arrowhead="box", arrowtail="diamond", color="deeppink", dir="both"]
+}
+
