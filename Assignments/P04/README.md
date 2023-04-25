@@ -9,7 +9,7 @@ This program implements a die class and a dice class that may be used in a bigge
 |   #   | File     | Description                      |
 | :---: | -------- | -------------------------------- |
 |   1   | Dice.py | Main driver of my list program . |
-|   2   | main.py | Testing importiing                    . |
+|   2   | main.py | Testing importing                    . |
 
 ### Instructions
 
